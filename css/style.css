@@ -368,17 +368,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0s;
 }
 
-#fh5co-home {
+.contenedor{
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  background-color: #c24d67;
-  color: #fff;
   overflow: hidden;
 }
-#fh5co-home .gradient {
+
+.contenedor .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -397,16 +396,88 @@ h1, h2, h3, h4, h5, h6 {
   background-image: repeating-linear-gradient(to bottom right, #7b3f75 0%, #c24d67 100%);
   background-image: -ms-repeating-linear-gradient(top left, #7b3f75 0%, #c24d67 100%);
 }
-#fh5co-home, #fh5co-home .text-wrap {
-  height: 900px;
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
 }
-#fh5co-home .text-wrap {
+
+.contenido-slider{
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  /*background-color: #c24d67;*/
+  color: #fff;
+
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+
+}
+
+.contenido-slider .gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: .9;
+  -webkit-backface-visibility: hidden;
+  background-color: #c24d67;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiM3YjNmNzUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2MyNGQ2NyIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #7b3f75), color-stop(1, #c24d67));
+  /* Android 2.3 */
+  background-image: -webkit-repeating-linear-gradient(top left, #7b3f75 0%, #c24d67 100%);
+  /* IE10+ */
+  background-image: repeating-linear-gradient(to bottom right, #7b3f75 0%, #c24d67 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #7b3f75 0%, #c24d67 100%);
+}
+
+
+#fh5co-home {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  /*background-color: #c24d67;*/
+  /*color: #fff;*/
+  overflow: hidden;
+}
+/*#fh5co-home .gradient {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  z-index: 2;*/
+/*  opacity: .9;*/
+/*  -webkit-backface-visibility: hidden;*/
+/*  background-color: #c24d67;*/
+/*  !* IE9, iOS 3.2+ *!*/
+/*  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiM3YjNmNzUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2MyNGQ2NyIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);*/
+/*  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #7b3f75), color-stop(1, #c24d67));*/
+/*  !* Android 2.3 *!*/
+/*  background-image: -webkit-repeating-linear-gradient(top left, #7b3f75 0%, #c24d67 100%);*/
+/*  !* IE10+ *!*/
+/*  background-image: repeating-linear-gradient(to bottom right, #7b3f75 0%, #c24d67 100%);*/
+/*  background-image: -ms-repeating-linear-gradient(top left, #7b3f75 0%, #c24d67 100%);*/
+/*}*/
+#fh5co-home, #fh5co-home .text-wrap, .contenido-slider .text-wrap {
+  height: 200%;
+}
+#fh5co-home .text-wrap, .contenido-slider .text-wrap{
   display: table;
   width: 100%;
   position: relative;
   z-index: 4;
 }
-#fh5co-home .text-inner {
+#fh5co-home .text-inner , .contenido-slider .text-inner{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -423,16 +494,16 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   border-bottom: 1px dashed white;
 }
-#fh5co-home .text-inner h1 {
+#fh5co-home .text-inner h1 , .contenido-slider .text-inner h1{
   font-size: 50px;
   color: white;
   margin: 0 0 20px 0;
 }
-#fh5co-home .text-inner h2 {
+#fh5co-home .text-inner h2 , .contenido-slider .text-inner h2 {
   font-size: 28px;
   line-height: 38px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   margin: 0;
 }
 
@@ -457,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro {
   position: relative;
   bottom: 0;
-  margin-top: -150px;
+  margin-top: -80px;
   z-index: 10;
   padding-bottom: 7em;
 }
